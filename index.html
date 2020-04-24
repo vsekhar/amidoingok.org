@@ -8,6 +8,19 @@
   <meta name="author" content="vsekhar">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <style>
+      html, body {
+          height: 100%;
+      }
+      body {
+          display: flex;
+          flex-direction: column;
+      }
+      .content {
+          flex: 1 0 auto;
+      }
+      .footer {
+          flex-shrink: 0;
+      }
       h1 {
           text-align: center;
           font-family: Roboto;
@@ -29,10 +42,16 @@
 </head>
 
 <body>
-  <h1>Yes.</h1>
+  <div class="content">
+    <h1>Yes.</h1>
 
-  <p>All things considered, you're doing great.</p>
+    <p>All things considered, you're doing great.</p>
 
-  <p>Keep at it. You got this.</p>
+    <p>Keep at it. You got this.</p>
+  </div>
+
+  <footer class="footer">
+    <p style="text-align: right;"><a href="https://github.com/vsekhar/amidoingok.org">GitHub</a></p>
+  </footer>
 </body>
 </html>
